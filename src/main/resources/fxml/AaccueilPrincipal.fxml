@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" prefHeight="546.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gestion.trelux.controller.AccueilClientController">
+   <children>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="132.0" prefHeight="37.0" prefWidth="112.0" text="Username">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="76.0" layoutY="213.0" prefHeight="37.0" prefWidth="112.0" text="Password">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="txtPasswor" layoutX="190.0" layoutY="213.0" prefHeight="37.0" prefWidth="266.0" />
+      <TextField fx:id="txtUser" layoutX="190.0" layoutY="132.0" prefHeight="37.0" prefWidth="266.0" />
+      <Button fx:id="btnConnect" layoutX="148.0" layoutY="312.0" mnemonicParsing="false" onAction="#seConnecterAction" prefHeight="37.0" prefWidth="164.0" text="Se connecter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="357.0" layoutY="312.0" mnemonicParsing="false" onAction="#quitterAction" prefHeight="37.0" prefWidth="164.0" text="Quitter">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Hyperlink layoutX="31.0" layoutY="378.0" prefHeight="37.0" prefWidth="127.0" text="Pas encore inscrit?" textFill="#244457fc">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Hyperlink layoutX="22.0" layoutY="415.0" prefHeight="28.0" prefWidth="145.0" text="Mot de passe oublié?" textFill="#244457f7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+   </children>
+</AnchorPane>

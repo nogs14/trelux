@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane id="AnchorPane" fx:id="txtcin" prefHeight="651.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="gestion.trelux.controller.InscriptionController">
+   <children>
+      <Label alignment="CENTER" layoutX="158.0" layoutY="14.0" prefHeight="30.0" prefWidth="262.0" text="Page d'inscription">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="170.0" layoutY="139.0" prefHeight="25.0" prefWidth="56.0" text="Prenom" />
+      <Label alignment="CENTER" layoutX="170.0" layoutY="99.0" prefHeight="25.0" prefWidth="56.0" text="Nom" />
+      <Label alignment="CENTER" layoutX="118.0" layoutY="179.0" prefHeight="25.0" prefWidth="108.0" text="Date de naissance" />
+      <Label layoutX="126.0" layoutY="219.0" prefHeight="25.0" prefWidth="93.0" text="Lieu de naissance" />
+      <Label alignment="CENTER" layoutX="158.0" layoutY="258.0" prefHeight="25.0" prefWidth="59.0" text="Téléphone" />
+      <Label alignment="CENTER" layoutX="184.0" layoutY="334.0" prefHeight="25.0" prefWidth="42.0" text="Email" />
+      <Label alignment="CENTER" layoutX="173.0" layoutY="370.0" prefHeight="25.0" prefWidth="50.0" text="Adresse" />
+      <Label alignment="CENTER" layoutX="190.0" layoutY="409.0" prefHeight="25.0" prefWidth="30.0" text="Login" />
+      <Label layoutX="152.0" layoutY="446.0" prefHeight="25.0" prefWidth="72.0" text="Mot de passe" />
+      <Label layoutX="158.0" layoutY="296.0" prefHeight="25.0" prefWidth="59.0" text="Nationalité" />
+      <Label layoutX="256.0" layoutY="493.0" prefHeight="25.0" prefWidth="25.0" text="Sexe" />
+      <TextField fx:id="txtnom" layoutX="226.0" layoutY="99.0" />
+      <TextField fx:id="txtprenom" layoutX="226.0" layoutY="139.0" />
+      <TextField fx:id="txtdate" layoutX="226.0" layoutY="179.0" />
+      <TextField fx:id="txtlieu" layoutX="226.0" layoutY="219.0" />
+      <TextField fx:id="txttel" layoutX="226.0" layoutY="258.0" />
+      <TextField fx:id="txtnationalite" layoutX="226.0" layoutY="296.0" />
+      <TextField fx:id="txtmail" layoutX="226.0" layoutY="334.0" />
+      <TextField fx:id="txtadresse" layoutX="226.0" layoutY="370.0" />
+      <TextField fx:id="txtlogin" layoutX="226.0" layoutY="409.0" />
+      <PasswordField fx:id="txtmotpass" layoutX="226.0" layoutY="446.0" />
+      <RadioButton fx:id="masculin" layoutX="332.0" layoutY="497.0" mnemonicParsing="false" onAction="#choisirSexe" prefHeight="17.0" prefWidth="30.0" text="M">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexe" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="feminin" layoutX="289.0" layoutY="497.0" mnemonicParsing="false" onAction="#choisirSexe" prefHeight="17.0" prefWidth="42.0" text="F" toggleGroup="$sexe" />
+      <Button fx:id="btninscription" layoutX="205.0" layoutY="553.0" mnemonicParsing="false" onAction="#HandleInscription" prefHeight="25.0" prefWidth="83.0" text="S'inscrire">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="308.0" layoutY="553.0" mnemonicParsing="false" onAction="#handleActualiser" prefHeight="30.0" prefWidth="93.0" text="Actualiser">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="170.0" layoutY="64.0" prefHeight="25.0" prefWidth="56.0" text="CIN" />
+      <TextField fx:id="txtcin" layoutX="226.0" layoutY="64.0" />
+   </children>
+</AnchorPane>

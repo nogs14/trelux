@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="600.0" style="-fx-background-color: #4fb053;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.trelux.controller.Inscription1Controller">
+   <children>
+      <TextField fx:id="txtCin" layoutX="27.0" layoutY="91.0" prefHeight="40.0" prefWidth="242.0" promptText="CIN" />
+      <TextField fx:id="txtTel" layoutX="340.0" layoutY="91.0" prefHeight="40.0" prefWidth="242.0" promptText="TELEPHONE" style="-fx-border-radius: 0px;" />
+      <TextField fx:id="txtPrenom" layoutX="27.0" layoutY="158.0" prefHeight="40.0" prefWidth="242.0" promptText="PRENOM" />
+      <TextField fx:id="txtAdresse" layoutX="340.0" layoutY="158.0" prefHeight="40.0" prefWidth="242.0" promptText="ADRESSE" />
+      <TextField fx:id="txtNom" layoutX="27.0" layoutY="226.0" prefHeight="40.0" prefWidth="242.0" promptText="NOM" />
+      <TextField fx:id="txtEmail" layoutX="340.0" layoutY="226.0" prefHeight="40.0" prefWidth="242.0" promptText="EMAIL" />
+      <TextField fx:id="txtDate" layoutX="27.0" layoutY="295.0" prefHeight="40.0" prefWidth="242.0" promptText="DATE DE NAISSANCE" />
+      <TextField fx:id="txtLogin" layoutX="340.0" layoutY="295.0" prefHeight="40.0" prefWidth="242.0" promptText="LOGIN" />
+      <TextField fx:id="txtLieu" layoutX="27.0" layoutY="360.0" prefHeight="40.0" prefWidth="242.0" promptText="LIEU DE NAISSANCE" />
+      <PasswordField fx:id="txtMotPasse" layoutX="341.0" layoutY="360.0" prefHeight="40.0" prefWidth="242.0" promptText="MOT DE PASSE" />
+      <Label alignment="CENTER" layoutX="341.0" layoutY="434.0" prefHeight="25.0" prefWidth="45.0" text="sexe" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="feminin" layoutX="386.0" layoutY="438.0" mnemonicParsing="false" onAction="#choisirSexe" prefHeight="17.0" prefWidth="37.0" selected="true" text="F" textFill="WHITE">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexe" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="masculin" layoutX="423.0" layoutY="438.0" mnemonicParsing="false" onAction="#choisirSexe" prefHeight="17.0" prefWidth="37.0" text="M" textFill="WHITE" toggleGroup="$sexe" />
+      <Button layoutX="172.0" layoutY="501.0" mnemonicParsing="false" onAction="#inscription" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #ff1a1a;" text="S'inscrire">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="322.0" layoutY="501.0" mnemonicParsing="false" onAction="#actualiser" prefHeight="40.0" prefWidth="128.0" style="-fx-background-color: #ff9900;" text="Actualiser">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutX="123.0" layoutY="14.0" prefHeight="40.0" prefWidth="375.0" text="PAGE D'INSCRIPTION" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

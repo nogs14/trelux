@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 9 juin 2018 15:16:12 by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="gestion.trelux.metier.Inventaire" table="inventaire" schema="public" optimistic-lock="version">
+        <id name="codeinventaire" type="string">
+            <column name="codeinventaire" length="254" />
+            <generator class="assigned" />
+        </id>
+        <property name="dateinventaire" type="string">
+            <column name="dateinventaire" length="254" />
+        </property>
+        <property name="quentitevendue" type="java.lang.Integer">
+            <column name="quentitevendue" />
+        </property>
+        <property name="chiffreaffaire" type="java.lang.Integer">
+            <column name="chiffreaffaire" />
+        </property>
+        <property name="benefice" type="java.lang.Integer">
+            <column name="benefice" />
+        </property>
+        <property name="perte" type="java.lang.Integer">
+            <column name="perte" />
+        </property>
+    </class>
+</hibernate-mapping>

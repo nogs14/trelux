@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="562.0" prefWidth="549.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestion.trelux.controller.AccueilClientController">
+   <children>
+      <ImageView fitHeight="133.0" fitWidth="549.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Banniere.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="btnconnecter" layoutX="160.0" layoutY="225.0" mnemonicParsing="false" onAction="#seConnecter" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: #0099ff;" text="Se connecter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnInscription" layoutX="160.0" layoutY="325.0" mnemonicParsing="false" onAction="#sInscrire" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: #0099ff;" text="S'inscrire" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="bttExit" layoutX="160.0" layoutY="417.0" mnemonicParsing="false" onAction="#quitter" prefHeight="56.0" prefWidth="234.0" style="-fx-background-color: #0099ff;" text="Quitter" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" layoutY="122.0" prefHeight="45.0" prefWidth="549.0" style="-fx-font-size: 24;" text="Paramétres de connexion" />
+   </children>
+</AnchorPane>
